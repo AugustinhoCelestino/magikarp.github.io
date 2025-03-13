@@ -47,6 +47,7 @@ export class AppComponent implements OnInit {
     this.addBasicInfo(doc);
     this.addLanguage(doc);
     this.addEmploymentePageTwo(doc);
+    this.addEducation(doc);
   }
 
   addAvatar(doc: jsPDF): void {
@@ -78,7 +79,7 @@ export class AppComponent implements OnInit {
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(10);
     doc.text('Sr IT Develop | Full Stack', 15, 25);
-    doc.text('Angular | JAVA | C# | .Net | AWS', 9, 30);
+    doc.text('Angular | .Net | C# | Java | AWS', 9, 30);
   }
 
   addPersonalInfo(doc: jsPDF): void {
@@ -129,7 +130,7 @@ export class AppComponent implements OnInit {
     doc.setFont('helvetica', 'bold');
     doc.text('Angular', 6, 170);
     doc.setTextColor(this.bg_color);
-    doc.text('Avançado ', 47, 170);
+    doc.text('6 anos', 52, 170);
     doc.circle(48, 175, 1.3, 'F');
     doc.circle(51.5, 175, 1.3, 'F');
     doc.circle(55, 175, 1.3, 'F');
@@ -138,12 +139,12 @@ export class AppComponent implements OnInit {
     doc.circle(62, 175, 1.3, 'F');
     doc.setTextColor(this.bk_color);
     doc.setFont('helvetica', 'normal');
-    doc.text('6 anos', 6, 175);
+    doc.text('Avançado', 6, 175);
 
     doc.setFont('helvetica', 'bold');
     doc.text('.Net', 6, 185);
     doc.setTextColor(this.bg_color);
-    doc.text('Avançado ', 47, 185);
+    doc.text('6 anos', 52, 185);
     doc.circle(48, 190, 1.3, 'F');
     doc.circle(51.5, 190, 1.3, 'F');
     doc.circle(55, 190, 1.3, 'F');
@@ -152,12 +153,12 @@ export class AppComponent implements OnInit {
     doc.circle(62, 190, 1.3, 'F');
     doc.setTextColor(this.bk_color);
     doc.setFont('helvetica', 'normal');
-    doc.text('6 anos', 6, 190);
+    doc.text('Avançado', 6, 190);
 
     doc.setFont('helvetica', 'bold');
     doc.text('SQL', 6, 200);
     doc.setTextColor(this.bg_color);
-    doc.text('Especialista', 44, 200);
+    doc.text('6 anos', 52, 200);
     doc.circle(48, 205, 1.3, 'F');
     doc.circle(51.5, 205, 1.3, 'F');
     doc.circle(55, 205, 1.3, 'F');
@@ -165,12 +166,12 @@ export class AppComponent implements OnInit {
     doc.circle(62, 205, 1.3, 'F');
     doc.setTextColor(this.bk_color);
     doc.setFont('helvetica', 'normal');
-    doc.text('6 anos', 6, 205);
+    doc.text('Especialista', 6, 205);
 
     doc.setFont('helvetica', 'bold');
     doc.text('AWS', 6, 215);
     doc.setTextColor(this.bg_color);
-    doc.text('Intermediário', 44, 215);
+    doc.text('3 anos', 52, 215);
     doc.circle(48, 220, 1.3, 'F');
     doc.circle(51.5, 220, 1.3, 'F');
     doc.circle(55, 220, 1.3, 'F');
@@ -179,13 +180,12 @@ export class AppComponent implements OnInit {
     doc.circle(62, 220, 1.3, 'F');
     doc.setTextColor(this.bk_color);
     doc.setFont('helvetica', 'normal');
-    doc.text('3 anos', 6, 220);
-
+    doc.text('Intermediário', 6, 220);
 
     doc.setFont('helvetica', 'bold');
     doc.text('TypeScript', 6, 230);
     doc.setTextColor(this.bg_color);
-    doc.text('Especialista', 44, 230);
+    doc.text('6 anos', 52, 230);
     doc.circle(48, 235, 1.3, 'F');
     doc.circle(51.5, 235, 1.3, 'F');
     doc.circle(55, 235, 1.3, 'F');
@@ -193,12 +193,12 @@ export class AppComponent implements OnInit {
     doc.circle(62, 235, 1.3, 'F');
     doc.setTextColor(this.bk_color);
     doc.setFont('helvetica', 'normal');
-    doc.text('6 anos', 6, 235);
+    doc.text('Especialista', 6, 235);
 
     doc.setFont('helvetica', 'bold');
     doc.text('Java', 6, 245);
     doc.setTextColor(this.bg_color);
-    doc.text('Intermediário', 44, 245);
+    doc.text('2 anos', 52, 245);
     doc.circle(48, 250, 1.3, 'F');
     doc.circle(51.5, 250, 1.3, 'F');
     doc.circle(55, 250, 1.3, 'F');
@@ -207,12 +207,12 @@ export class AppComponent implements OnInit {
     doc.circle(62, 250, 1.3, 'F');
     doc.setTextColor(this.bk_color);
     doc.setFont('helvetica', 'normal');
-    doc.text('2 anos', 6, 250);
+    doc.text('Intermediário', 6, 250);
 
     doc.setFont('helvetica', 'bold');
     doc.text('HTML', 6, 260);
     doc.setTextColor(this.bg_color);
-    doc.text('Especialista', 44, 260);
+    doc.text('6 anos', 52, 260);
     doc.circle(48, 265, 1.3, 'F');
     doc.circle(51.5, 265, 1.3, 'F');
     doc.circle(55, 265, 1.3, 'F');
@@ -220,12 +220,12 @@ export class AppComponent implements OnInit {
     doc.circle(62, 265, 1.3, 'F');
     doc.setTextColor(this.bk_color);
     doc.setFont('helvetica', 'normal');
-    doc.text('6 anos', 6, 265);
+    doc.text('Especialista', 6, 265);
 
     doc.setFont('helvetica', 'bold');
     doc.text('CSS', 6, 275);
     doc.setTextColor(this.bg_color);
-    doc.text('Especialista', 44, 275);
+    doc.text('6 anos', 52, 275);
     doc.circle(48, 280, 1.3, 'F');
     doc.circle(51.5, 280, 1.3, 'F');
     doc.circle(55, 280, 1.3, 'F');
@@ -233,27 +233,57 @@ export class AppComponent implements OnInit {
     doc.circle(62, 280, 1.3, 'F');
     doc.setTextColor(this.bk_color);
     doc.setFont('helvetica', 'normal');
-    doc.text('6 anos', 6, 280);
+    doc.text('Especialista', 6, 280);
   }
 
   addLanguage(doc: jsPDF): void {
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(16);
     doc.setTextColor(this.tt_color);
-    doc.text('Languages', 6, 252);
+    doc.text('Inglês', 6, 235);
     doc.setFillColor(this.ln_color);
-    doc.line(6, 256, 64, 256, 'F');
+    doc.line(6, 237, 64, 237, 'F');
 
     doc.setFontSize(10);
+
     doc.setTextColor(this.bk_color);
-    doc.text('English', 6, 264);
+    doc.setFont('helvetica', 'bold');
+    doc.text('Leitura/Escrita', 6, 249);
+    doc.setFont('helvetica', 'normal');
+    doc.text('Avançado', 6, 254);
     doc.setFillColor(this.bg_color);
-    doc.circle(48, 264, 1.3, 'F');
-    doc.circle(51.5, 264, 1.3, 'F');
-    doc.circle(55, 264, 1.3, 'F');
+    doc.circle(48, 252, 1.3, 'F');
+    doc.circle(51.5, 252, 1.3, 'F');
+    doc.circle(55, 252, 1.3, 'F');
+    doc.circle(58.5, 252, 1.3, 'F');
     doc.setFillColor(this.ns_color);
-    doc.circle(58.5, 264, 1.3, 'F');
-    doc.circle(62, 264, 1.3, 'F');
+    doc.circle(62, 252, 1.3, 'F');
+
+    doc.setTextColor(this.bk_color);
+    doc.setFont('helvetica', 'bold');
+    doc.text('Fala', 6, 262);
+    doc.setFont('helvetica', 'normal');
+    doc.text('Intermediário', 6, 267);
+    doc.setFillColor(this.bg_color);
+    doc.circle(48, 265, 1.3, 'F');
+    doc.circle(51.5, 265, 1.3, 'F');
+    doc.circle(55, 265, 1.3, 'F');
+    doc.setFillColor(this.ns_color);
+    doc.circle(58.5, 265, 1.3, 'F');
+    doc.circle(62, 265, 1.3, 'F');
+
+    doc.setTextColor(this.bk_color);
+    doc.setFont('helvetica', 'bold');
+    doc.text('Compreensão', 6, 274);
+    doc.setFont('helvetica', 'normal');
+    doc.text('Intermediário', 6, 279);
+    doc.setFillColor(this.bg_color);
+    doc.circle(48, 277, 1.3, 'F');
+    doc.circle(51.5, 277, 1.3, 'F');
+    doc.circle(55, 277, 1.3, 'F');
+    doc.setFillColor(this.ns_color);
+    doc.circle(58.5, 277, 1.3, 'F');
+    doc.circle(62, 277, 1.3, 'F');
   }
 
   addProfile(doc: jsPDF): void {
@@ -267,27 +297,27 @@ export class AppComponent implements OnInit {
     doc.setTextColor(this.bk_color);
 
     doc.text(
-      "Sou um Full Stack Developer com mais de 6 anos de experiência em ",
+      'Sou um Full Stack Developer com mais de 6 anos de experiência em ',
       76,
       25
     );
     doc.text(
-      "desenvolvimento de soluções complexas para o setor financeiro e corporativo,",
+      'desenvolvimento de soluções complexas para o setor financeiro e corporativo,',
       76,
       30
     );
     doc.text(
-      "utilizando tecnologias como .NET Core, Angular, SQL Server, Oracle, entre outras.",
+      'utilizando tecnologias como .NET Core, Angular, SQL Server, Oracle, entre outras.',
       76,
       35
     );
     doc.text(
-      "Tenho sólida experiência em Design System, API Gateway, e Integração com SAP,",
+      'Tenho sólida experiência em Design System, API Gateway, e Integração com SAP,',
       76,
       40
     );
     doc.text(
-      " além de forte conhecimento em práticas de segurança e governança de TI.",
+      ' além de forte conhecimento em práticas de segurança e governança de TI.',
       76,
       45
     );
@@ -302,35 +332,31 @@ export class AppComponent implements OnInit {
       55
     );
     doc.text(
-      "em entregar soluções de alto desempenho e escaláveis.  Tenho grande interesse ",
+      'em entregar soluções de alto desempenho e escaláveis.  Tenho grande interesse ',
       76,
       60
     );
     doc.text(
-      "em desafios que envolvem a modernização de sistemas legados e a implementação ",
+      'em desafios que envolvem a modernização de sistemas legados e a implementação ',
       76,
       65
     );
     doc.text(
-      "de CI/CD, buscando constantemente melhorar a performance e qualidade das ",
+      'de CI/CD, buscando constantemente melhorar a performance e qualidade das ',
       76,
       70
     );
     doc.text(
-      "soluções. Estou sempre em busca de oportunidades para crescer e contribuir",
+      'soluções. Estou sempre em busca de oportunidades para crescer e contribuir',
       76,
       75
     );
     doc.text(
-      "em projetos desafiadores, com um compromisso contínuo com a inovação e",
+      'em projetos desafiadores, com um compromisso contínuo com a inovação e',
       76,
       80
     );
-    doc.text(
-      "a evolução tecnológica.",
-      76,
-      85
-    );
+    doc.text('a evolução tecnológica.', 76, 85);
 
     // doc.setTextColor(this.bk_color);
     // doc.text('Estou nessa doideira de ser programador a cerca de uns 10 anos, já nem sei se', 76, 30);
@@ -478,9 +504,9 @@ export class AppComponent implements OnInit {
     }
   }
 
-  addEmploymentePageTwo(doc: jsPDF): void{
-    if (this.lang_en) {}
-    else{
+  addEmploymentePageTwo(doc: jsPDF): void {
+    if (this.lang_en) {
+    } else {
       this.addExperienceBNPP2024(doc, 15);
       this.addExperienceITAU2020(doc, 110);
       this.addExperienceSW(doc, 215);
@@ -522,32 +548,55 @@ export class AppComponent implements OnInit {
       doc.setFont('helvetica', 'normal');
       doc.setFontSize(16);
       doc.setTextColor(this.tt_color);
-      doc.text('Formação', 76, 251);
+      doc.text('Formação', 6, 93);
       doc.setFillColor(this.ln_color);
-      doc.line(76, 253, 204, 253, 'F');
+      doc.line(6, 94, 64, 94, 'F');
+
+      doc.setTextColor(this.bk_color);
+      doc.setFontSize(12);
+      doc.setFont('helvetica', 'bold');
+      doc.text('MBA - Pós Graduação', 5, 105);
       doc.setFontSize(10);
+      doc.setTextColor(this.bk_color);
+      doc.setFont('helvetica', 'normal');
+      doc.setTextColor(this.tt_color);
+      doc.text('Laureate Education, Inc', 5, 110);
+      doc.setTextColor(this.bk_color);
+      doc.text('Gestão de Sistemas de Informação', 5, 115);
+      doc.setFont('helvetica', 'bold');
+      doc.text('Concluído em 2018', 36, 121);
+      doc.setFont('helvetica', 'normal');
+      doc.text('- Gestão Estratégica de TI.', 5, 129);
+      doc.text('- Gestão de Projetos de TI.', 5, 134);
+      doc.text('- Arquitetura de Sistemas Empresariais.', 5, 139);
+      doc.text('- Liderança de Equipe.', 5, 144);
+      doc.text('- Gestão de Riscos Tecnológicos.', 5, 149);
+
+
+
 
       doc.setTextColor(this.bk_color);
+      doc.setFontSize(12);
       doc.setFont('helvetica', 'bold');
-      doc.text('Master of Business Administration - MBA', 76, 260);
-      doc.setTextColor(this.tt_color);
-      doc.text('2018', 190, 260);
-      doc.setTextColor(this.bg_color);
-      doc.setFont('helvetica', 'normal');
-      doc.text('Laureate Education, Inc.', 76, 265);
+      doc.text('Bacharelado - Graduação', 5, 165);
+      doc.setFontSize(10);
       doc.setTextColor(this.bk_color);
-      doc.text('Gestão de Sistemas de Informação', 76, 270);
+      doc.setFont('helvetica', 'normal');
+      doc.setTextColor(this.tt_color);
+      doc.text('ETEP - Faculdades', 5, 170);
+      doc.setTextColor(this.bk_color);
+      doc.text('Analise e Desenvolvimento de Sistemas', 5, 175);
+      doc.setFont('helvetica', 'bold');
+      doc.text('Concluído em 2017', 36, 181);
+      doc.setFont('helvetica', 'normal');
+      doc.text('- Estruturas de Dados.', 5, 189);
+      doc.text('- Logica de Programação.', 5, 194);
+      doc.text('- Linguagens de Programação.', 5, 199);
+      doc.text('- Bancos de Dados.', 5, 204);
+      doc.text('- Redes de Computadore.', 5, 209);
+      doc.text('- Desenvolvimento Web.', 5, 214);
+      doc.text('- Segurança da Informação e criptografia.', 5, 219);
 
-      doc.setTextColor(this.bk_color);
-      doc.setFont('helvetica', 'bold');
-      doc.text('Análise e Desenvolvimento de Sistemas', 76, 280);
-      doc.setTextColor(this.tt_color);
-      doc.text('2017', 190, 280);
-      doc.setTextColor(this.bg_color);
-      doc.setFont('helvetica', 'normal');
-      doc.text('ETEP - University Center', 76, 285);
-      doc.setTextColor(this.bk_color);
-      doc.text('Computer Programming', 76, 290);
     }
   }
 
@@ -813,11 +862,7 @@ export class AppComponent implements OnInit {
     doc.text('Jan 2020 - Out 2023', 172, startline);
     doc.setTextColor(this.bg_color);
     doc.setFont('helvetica', 'normal');
-    doc.text(
-      'Itaú IBBA, São Paulo, Brasil',
-      76,
-      startline + 5
-    );
+    doc.text('Itaú IBBA, São Paulo, Brasil', 76, startline + 5);
     doc.setTextColor(this.bk_color);
     doc.setFont('helvetica', 'bold');
     doc.text('Senior | Team Member', 76, startline + 10);
@@ -865,11 +910,7 @@ export class AppComponent implements OnInit {
       82,
       startline + 53
     );
-    doc.text(
-      'garantir a qualidade do código.',
-      82,
-      startline + 58
-    );
+    doc.text('garantir a qualidade do código.', 82, startline + 58);
     doc.circle(78, startline + 69, 1, 'F');
     doc.text(
       'Segui rigorosamente o Design System da empresa para garantir consistência',
@@ -897,12 +938,7 @@ export class AppComponent implements OnInit {
       82,
       startline + 87
     );
-    doc.text(
-      'com alto padrão de qualidade.',
-      82,
-      startline + 92
-    );
-
+    doc.text('com alto padrão de qualidade.', 82, startline + 92);
   }
 
   addExperienceSW(doc: jsPDF, startline: number): void {
@@ -915,11 +951,7 @@ export class AppComponent implements OnInit {
     doc.text('Feb 2019 - Jan 2020', 172, startline);
     doc.setTextColor(this.bg_color);
     doc.setFont('helvetica', 'normal');
-    doc.text(
-      'SoftWillians IT Solutions, Jacarei, Brasil',
-      76,
-      startline + 5
-    );
+    doc.text('SoftWillians IT Solutions, Jacarei, Brasil', 76, startline + 5);
     doc.setTextColor(this.bk_color);
     doc.setFont('helvetica', 'bold');
     doc.text('Pleno | Team Member', 76, startline + 10);
@@ -967,11 +999,7 @@ export class AppComponent implements OnInit {
       82,
       startline + 53
     );
-    doc.text(
-      'de desenvolvimento.',
-      82,
-      startline + 58
-    );
+    doc.text('de desenvolvimento.', 82, startline + 58);
     doc.circle(78, startline + 69, 1, 'F');
     doc.text(
       'Contato direto com os usuários finais, apresentando o sistema, coletando',
